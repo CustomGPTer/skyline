@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline: a free, private weather app for Android with animated skies</title>
+<meta name="description" content="Skyline is a free Android weather app with live animated skies, hourly charts, a 16-day outlook, air quality and pollen, an activity planner, rain radar, Met Office UK warnings and three widgets. No adverts, no account, no tracking.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/skyline/">
+<meta name="theme-color" content="#e8f0f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#081522" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Skyline">
+<meta property="og:title" content="Skyline: a free, private weather app for Android with animated skies">
+<meta property="og:description" content="Skyline is a free Android weather app with live animated skies, hourly charts, a 16-day outlook, air quality and pollen, an activity planner, rain radar, Met Office UK warnings and three widgets. No adverts, no account, no tracking.">
+<meta property="og:url" content="https://customgpter.github.io/skyline/">
+<meta property="og:image" content="https://customgpter.github.io/skyline/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Skyline&#x27;s forecast screen: the current temperature over an animated sky, with the next 24 hours below">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skyline","url":"https://customgpter.github.io/skyline/","description":"Skyline is a free Android weather app with live animated skies, hourly charts, a 16-day outlook, air quality and pollen, an activity planner, rain radar, Met Office UK warnings and three widgets. No adverts, no account, no tracking.","applicationCategory":"WeatherApplication","operatingSystem":"Android 10 or later","softwareVersion":"1.0.1","downloadUrl":"https://github.com/CustomGPTer/skyline/releases/latest/download/Skyline.apk","releaseNotes":"https://customgpter.github.io/skyline/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/skyline/assets/og.png","featureList":["Now and the next 24 hours","Sixteen days ahead","Everything else you check","Drawn live on your phone","Kind to your battery","Activity windows","Site mode","Recent rain radar","Met Office UK warnings","Three widgets","Morning summary and alerts","No account, no tracking"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Skyline really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked."}},{"@type":"Question","name":"Is it on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Skyline is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later and an up-to-date Android System WebView, which comes with every current phone."}},{"@type":"Question","name":"Where do the forecasts come from?","acceptedAnswer":{"@type":"Answer","text":"From Open-Meteo, which combines forecasts from national weather services, including the Met Office's models for the UK. Skyline asks Open-Meteo directly. There is no Skyline server in between."}},{"@type":"Question","name":"Does it need my location?","acceptedAnswer":{"@type":"Answer","text":"No. You can search for a town without giving any permission. If you tap Use approximate location, Android gives Skyline a rough position once, which is rounded to about 2 km and saved as a fixed place. It never follows you and never runs in the background."}},{"@type":"Question","name":"What does Open-Meteo see?","acceptedAnswer":{"@type":"Answer","text":"Your IP address, the town names you search for and the rounded position of each place you look at. Open-Meteo says its troubleshooting logs may hold positions and are deleted after 90 days. Skyline is private, but no weather app that fetches a forecast can be anonymous."}},{"@type":"Question","name":"Why is the radar switched off?","acceptedAnswer":{"@type":"Answer","text":"The radar and the Met Office feed contact other services (RainViewer, OpenStreetMap and the Met Office), so they wait until you turn them on. You can switch each off again in Settings."}},{"@type":"Question","name":"Does the radar show rain that's coming?","acceptedAnswer":{"@type":"Answer","text":"No. It shows the last two hours or so of radar, not a forecast. Clear patches on the map are not a promise of dry weather."}},{"@type":"Question","name":"Will alerts warn me about dangerous weather?","acceptedAnswer":{"@type":"Answer","text":"Skyline's alerts are based on the forecast and checked when Android allows, so they can be late. They are not official warnings and not an emergency service. Official UK warnings are in Explore, and on the Met Office website."}},{"@type":"Question","name":"Does it work without signal?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your last forecast for each place stays on the phone and shows when it was fetched. You need a connection to refresh it."}},{"@type":"Question","name":"Can I use the planner for work on site?","acceptedAnswer":{"@type":"Answer","text":"Site mode helps you see when the forecast meets your own limits for wind, rain and temperature. It does not replace your RAMS, equipment limits, permits or judgement on the day."}},{"@type":"Question","name":"How do I get new versions?","acceptedAnswer":{"@type":"Answer","text":"Open Settings and tap Check for updates. Skyline asks GitHub, downloads the new version if there is one, checks it is genuine, and Android asks you to confirm. Your places and settings are kept."}},{"@type":"Question","name":"Who made it?","acceptedAnswer":{"@type":"Answer","text":"Skyline is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with Open-Meteo, the Met Office, RainViewer or OpenStreetMap."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Skyline home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#102638"/><circle cx="71" cy="43" r="16" fill="#F4CE83"/><path fill="#CEEDE4" d="M30,70C17,70 18,51 30,51C30,34 56,31 62,49C78,44 88,65 75,72L30,72Z"/><path d="M25,81L79,81M36,88L68,88" fill="none" stroke="#92CDBE" stroke-width="3" stroke-linecap="round"/></svg><span>Skyline</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/skyline/releases/latest/download/Skyline.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Weather with atmosphere.</h1>
+<p class="lede">Skyline is a weather app for Android with skies that move: sunshine, cloud, rain, snow, fog and the night sky, drawn live on your phone. Underneath is a forecast that tells you what you need: the next 24 hours, the next 16 days, and the best time to get outside.</p><p class="lede">It is free, with no adverts, no account and nothing to unlock. Forecasts come straight from Open-Meteo, and your places stay on your phone.</p>
+
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/skyline/releases/latest/download/Skyline.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.0.1</li><li>Android 10 or later</li><li>109 KB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/forecast.png" alt="Now: the current temperature, feels like, high and low, rain chance and gusts, over a sky that matches the weather outside." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No account</b><span>Search for a town and you&#x27;re done.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No tracking</b><span>No analytics, no advertising ID, no background location.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>16 days</b><span>Hourly detail, with a 14-day outlook that opens to 16.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn from the app&#x27;s own files with a real Open-Meteo forecast and Met Office feed. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from Skyline"><figure class="shot"><div class="phone"><img src="./assets/screens/forecast.png" alt="Now: the current temperature, feels like, high and low, rain chance and gusts, over a sky that matches the weather outside." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Now: the current temperature, feels like, high and low, rain chance and gusts, over a sky that matches the weather outside.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/hourly.png" alt="The next 24 hours as a chart you can touch: temperature, rain chance or gusts, hour by hour." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The next 24 hours as a chart you can touch: temperature, rain chance or gusts, hour by hour.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/daily.png" alt="The 14-day outlook, which opens to 16 days, with rain chance and the day&#x27;s range at a glance." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The 14-day outlook, which opens to 16 days, with rain chance and the day&#x27;s range at a glance.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/details.png" alt="Any day in detail: pick temperature, rain, wind, visibility, humidity or pressure and scroll through its hours." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Any day in detail: pick temperature, rain, wind, visibility, humidity or pressure and scroll through its hours.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/planner.png" alt="The planner finds the windows that suit walking, cycling, gardening or drying washing, within limits you set." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The planner finds the windows that suit walking, cycling, gardening or drying washing, within limits you set.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/warnings.png" alt="Official Met Office UK warnings, each linked to the full warning. Off until you switch it on." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Official Met Office UK warnings, each linked to the full warning. Off until you switch it on.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/privacy.png" alt="Privacy in plain language: every connection the app can make, and whether it is on." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Privacy in plain language: every connection the app can make, and whether it is on.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/forecast-light.png" alt="The same forecast in the daylight theme. There are also dark, AMOLED black and follow-system themes." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The same forecast in the daylight theme. There are also dark, AMOLED black and follow-system themes.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">No sign-up and no permissions to start. Type a town and Skyline does the rest.</p>
+<ol class="steps"><li><h3>Choose your town</h3><p>Search for a town and pick the right one from the list. Device location is optional: it saves a rounded, fixed place that never follows you.</p></li><li><h3>Read the sky</h3><p>The large forecast shows now. Touch the chart or any hour to see that hour instead, and tap a day for its full detail.</p></li><li><h3>Make it yours</h3><p>Save up to 20 places, reorder and hide cards, choose a theme and accent, and add Current, Hourly and Daily widgets.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>The forecast</h3><dl><div><dt>Now and the next 24 hours</dt><dd>Temperature, feels like, high and low, rain chance and amount, wind and gusts, with a chart you can drag across.</dd></div><div><dt>Sixteen days ahead</dt><dd>A 14-day outlook that opens to 16, and a full hour-by-hour view of any day, for any of its measures.</dd></div><div><dt>Everything else you check</dt><dd>UV, air quality, European pollen in season, humidity and dew point, visibility, pressure, sunrise and sunset.</dd></div></dl></div><div class="group"><h3>Skies that move</h3><dl><div><dt>Drawn live on your phone</dt><dd>Sunshine, cloud, rain, snow, fog, the night sky and the moon, made on the phone rather than streamed as video.</dd></div><div><dt>Kind to your battery</dt><dd>Animations pause when you leave, go still in battery saver, and follow Android's reduce-motion setting. A still sky is one tap away.</dd></div></dl></div><div class="group"><h3>Plan your day</h3><dl><div><dt>Activity windows</dt><dd>The hours that suit walking, cycling, gardening or drying washing, within limits you can change.</dd></div><div><dt>Site mode</dt><dd>For construction: your own limits for wind, rain and temperature, inside your working hours. A guide to the forecast, not a permit to work.</dd></div></dl></div><div class="group"><h3>Maps and warnings</h3><dl><div><dt>Recent rain radar</dt><dd>An optional radar map with zoom, pan, coverage shading and playback of the last frames.</dd></div><div><dt>Met Office UK warnings</dt><dd>Optional official warning summaries for the UK, each linking straight to the full warning.</dd></div></dl></div><div class="group"><h3>Widgets and alerts</h3><dl><div><dt>Three widgets</dt><dd>Current, Hourly and Daily, resizable, each showing the place you choose and when it was last updated.</dd></div><div><dt>Morning summary and alerts</dt><dd>Optional: a morning summary, and alerts for rain, gusts, frost, heat and pollen at levels you set. All start switched off.</dd></div></dl></div><div class="group"><h3>Private by design</h3><dl><div><dt>No account, no tracking</dt><dd>No adverts, analytics or advertising ID. Places and settings stay in the app's private storage, and phone backups leave them out.</dd></div><div><dt>Works offline</dt><dd>Your last forecast stays readable with no signal, clearly marked with when it was fetched.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your weather, not your data</h2>
+<ul class="plain"><li><h3>No account, no tracking</h3><p>No sign-up, adverts, analytics or advertising ID. The developer receives nothing.</p></li><li><h3>Location is optional</h3><p>Town search needs no permission. Device location is approximate, rounded and only used when you tap it.</p></li><li><h3>Every connection listed</h3><p>The app shows each service it can contact and whether it is switched on.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">Skyline is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called Skyline.apk and is about 109 KB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>In Skyline, open Settings and tap Check for updates. It downloads the new version from GitHub, checks it is genuine, and Android asks you to confirm. Everything you have saved is kept.</p></li></ol>
+<p class="after-table">Version 1.0.1, released 22 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is Skyline really free?</summary><p>Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked.</p></details><details><summary>Is it on Google Play?</summary><p>No. Skyline is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later and an up-to-date Android System WebView, which comes with every current phone.</p></details><details><summary>Where do the forecasts come from?</summary><p>From Open-Meteo, which combines forecasts from national weather services, including the Met Office's models for the UK. Skyline asks Open-Meteo directly. There is no Skyline server in between.</p></details><details><summary>Does it need my location?</summary><p>No. You can search for a town without giving any permission. If you tap Use approximate location, Android gives Skyline a rough position once, which is rounded to about 2 km and saved as a fixed place. It never follows you and never runs in the background.</p></details><details><summary>What does Open-Meteo see?</summary><p>Your IP address, the town names you search for and the rounded position of each place you look at. Open-Meteo says its troubleshooting logs may hold positions and are deleted after 90 days. Skyline is private, but no weather app that fetches a forecast can be anonymous.</p></details><details><summary>Why is the radar switched off?</summary><p>The radar and the Met Office feed contact other services (RainViewer, OpenStreetMap and the Met Office), so they wait until you turn them on. You can switch each off again in Settings.</p></details><details><summary>Does the radar show rain that&#x27;s coming?</summary><p>No. It shows the last two hours or so of radar, not a forecast. Clear patches on the map are not a promise of dry weather.</p></details><details><summary>Will alerts warn me about dangerous weather?</summary><p>Skyline's alerts are based on the forecast and checked when Android allows, so they can be late. They are not official warnings and not an emergency service. Official UK warnings are in Explore, and on the Met Office website.</p></details><details><summary>Does it work without signal?</summary><p>Yes. Your last forecast for each place stays on the phone and shows when it was fetched. You need a connection to refresh it.</p></details><details><summary>Can I use the planner for work on site?</summary><p>Site mode helps you see when the forecast meets your own limits for wind, rain and temperature. It does not replace your RAMS, equipment limits, permits or judgement on the day.</p></details><details><summary>How do I get new versions?</summary><p>Open Settings and tap Check for updates. Skyline asks GitHub, downloads the new version if there is one, checks it is genuine, and Android asks you to confirm. Your places and settings are kept.</p></details><details><summary>Who made it?</summary><p>Skyline is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with Open-Meteo, the Met Office, RainViewer or OpenStreetMap.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">A clearer view of your day</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/skyline/releases/latest/download/Skyline.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Skyline home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#102638"/><circle cx="71" cy="43" r="16" fill="#F4CE83"/><path fill="#CEEDE4" d="M30,70C17,70 18,51 30,51C30,34 56,31 62,49C78,44 88,65 75,72L30,72Z"/><path d="M25,81L79,81M36,88L68,88" fill="none" stroke="#92CDBE" stroke-width="3" stroke-linecap="round"/></svg><span>Skyline</span></a>
+<p>&copy; 2026 Jonathan Jackson. Skyline is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/skyline/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>

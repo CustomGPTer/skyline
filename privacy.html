@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skyline privacy policy</title>
+<meta name="description" content="What Skyline does with your information: in short, it stays on your phone.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/skyline/privacy.html">
+<meta name="theme-color" content="#e8f0f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#081522" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Skyline">
+<meta property="og:title" content="Skyline privacy policy">
+<meta property="og:description" content="What Skyline does with your information: in short, it stays on your phone.">
+<meta property="og:url" content="https://customgpter.github.io/skyline/privacy.html">
+<meta property="og:image" content="https://customgpter.github.io/skyline/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Skyline&#x27;s forecast screen: the current temperature over an animated sky, with the next 24 hours below">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Skyline home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#102638"/><circle cx="71" cy="43" r="16" fill="#F4CE83"/><path fill="#CEEDE4" d="M30,70C17,70 18,51 30,51C30,34 56,31 62,49C78,44 88,65 75,72L30,72Z"/><path d="M25,81L79,81M36,88L68,88" fill="none" stroke="#92CDBE" stroke-width="3" stroke-linecap="round"/></svg><span>Skyline</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/skyline/releases/latest/download/Skyline.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main" class="doc">
+<div class="wrap">
+<div class="measure">
+<h1>Privacy policy</h1>
+<p class="lede">Last updated 22 November 2026. This policy covers the Skyline app for Android (package com.skyline.weather) and this website. Skyline is made by Jonathan Jackson, an individual developer in the United Kingdom.</p>
+<h2 id="short">The short version</h2><ul>
+<li>There is no account, no adverts, no analytics and no tracking. The developer receives nothing from the app.</li>
+<li>To get a forecast, Skyline asks Open-Meteo directly, which sees your IP address and the rounded position of the place.</li>
+<li>Radar, maps and Met Office warnings are off until you switch them on.</li>
+<li>Your places and settings stay on your phone, and phone backups leave them out.</li>
+</ul><h2 id="connections">Who the app talks to, and when</h2><table>
+<thead><tr><th scope="col">Service</th><th scope="col">What it receives</th><th scope="col">When</th></tr></thead>
+<tbody>
+<tr><th scope="row">Open-Meteo place search</th><td>Your IP address and the town you typed</td><td>When you press Search</td></tr>
+<tr><th scope="row">Open-Meteo forecasts</th><td>Your IP address and the rounded position of the place</td><td>When a forecast is opened or refreshed, and for background checks you switch on</td></tr>
+<tr><th scope="row">Open-Meteo air quality and pollen</th><td>Your IP address and the rounded position</td><td>On by default; can be switched off</td></tr>
+<tr><th scope="row">RainViewer and OpenStreetMap</th><td>Your IP address and the map area you look at</td><td>Only after you switch maps on, while the radar is open</td></tr>
+<tr><th scope="row">Met Office</th><td>Your IP address and a request for the UK-wide feed (no position)</td><td>Only after you switch warnings on, when you open them</td></tr>
+<tr><th scope="row">GitHub</th><td>Your IP address and a request for the newest Skyline release</td><td>Only when you tap Check for updates</td></tr>
+</tbody>
+</table>
+<p>Each service handles what it receives under its own policy. Open-Meteo says its troubleshooting logs may contain positions and are deleted after 90 days. There is no Skyline server, so nothing is sent to the developer.</p><h2 id="location">Location</h2><p>Town search needs no permission. Use approximate location asks Android for a rough position once, when you tap it. Skyline rounds it to about 2 km and saves it as a fixed place. It never asks for precise or background location, and background checks use your saved places, not your device's position.</p><h2 id="kept">What stays on your phone</h2><p>Your places, settings and the latest forecasts are kept in the app's private storage, which other apps cannot read. Android's cloud backup and device-to-device transfer are switched off for Skyline. Uninstalling the app removes all of it.</p><h2 id="permissions">What the app can reach</h2><p>Internet access, approximate location (only when you ask), notifications (only for alerts you switch on), starting after a restart (to keep your background checks), and installing packages (only to hand a downloaded, verified Skyline update to Android, which asks you to confirm). No camera, microphone, contacts, storage or precise-location access.</p><h2 id="copies">Exports and sharing</h2><p>Export settings saves a file with your places and preferences where you choose. Keep it private: it lists your places. Share forecast sends a short text through your phone's share menu. Neither happens unless you ask.</p><h2 id="deleting">Deleting your data</h2><p>Settings, Delete all app data removes your places, settings, forecasts and map cache, and stops background checks. It cannot recall a settings file you exported, or requests a service has already received.</p><h2 id="website">This website</h2><p>This site is hosted by GitHub Pages. It uses no cookies and no analytics. GitHub may keep standard web server logs, such as IP addresses, for security, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p><h2 id="children">Children</h2><p>Skyline collects nothing from anyone, and has nothing in it unsuitable for children.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions about this policy can be raised on <a href="https://github.com/CustomGPTer/skyline/issues">GitHub</a>. This policy was last updated on 22 November 2026.</p>
+</div>
+</div>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Skyline home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#102638"/><circle cx="71" cy="43" r="16" fill="#F4CE83"/><path fill="#CEEDE4" d="M30,70C17,70 18,51 30,51C30,34 56,31 62,49C78,44 88,65 75,72L30,72Z"/><path d="M25,81L79,81M36,88L68,88" fill="none" stroke="#92CDBE" stroke-width="3" stroke-linecap="round"/></svg><span>Skyline</span></a>
+<p>&copy; 2026 Jonathan Jackson. Skyline is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/skyline/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
