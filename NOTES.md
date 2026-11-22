@@ -1,14 +1,8 @@
-**First public release of Skyline**, a free, private weather app for Android 10 or later.
+**Skyline 1.0.2**
 
-- Current conditions and the next 24 hours, with a chart you can touch and a clearly labelled view of any hour.
-- A 14-day outlook that opens to 16 days, and an hour-by-hour view of any day.
-- Rain chance and amount, wind and gusts, UV, air quality, European pollen in season, humidity, visibility, pressure, sunrise and sunset.
-- Animated skies drawn on the phone, with still, reduced and battery-saving modes.
-- Up to 20 saved places, an activity planner and an optional site mode.
-- Optional rain radar and Met Office UK warning summaries, both off until you switch them on.
-- Optional morning summary and alerts; Current, Hourly and Daily widgets.
-- Check for updates and More apps in Settings.
+- Check for updates now opens the new version in your browser instead of installing it from inside the app, so Skyline no longer asks for permission to install apps.
+- The small heading and intro text on the welcome screen are easier to read over a bright sky.
 
-No adverts, no account, no tracking. Download **Skyline.apk** below.
+Download **Skyline.apk** below. It installs over 1.0.1 and keeps your places and settings.
 
-SHA-256: `aa82f0e138db2b441fcedb7765d64968e52c380dba0820f3bd825bedb60b7231`
+SHA-256: `b6609922ea642d04182ca270f4c59a05954acbac847be2811100faa772cd35d1`
